@@ -13,13 +13,7 @@ import java.util.Date;
 @TableName("t_bitmex_trade")
 public class BitmexTradeDataEntity {
 
-    private Long foreignNotional;
-
-    private Long grossValue;
-
-    private Double homeNotional;
-
-    private Long price;
+    private Double price;
 
     private String side;
 
@@ -27,12 +21,9 @@ public class BitmexTradeDataEntity {
 
     private String symbol;
 
-    private String tickDirection;
-
     private Date timestamp;
 
-    @TableId("trd_match_id")
-    @TableField("trd_match_id")
-    private String trdMatchID;
+    @TableId
+    private String id;
 
 }

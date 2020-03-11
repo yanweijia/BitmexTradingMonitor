@@ -27,11 +27,11 @@ public class MybatisPlusConfiguration {
      * 性能分析拦截器，不建议生产使用<br/>
      * 这里的设置默认开发和测试环境启用
      */
-    @Profile({"dev", "stg"})// 设置 dev stg 环境开启
-    @Bean
-    public PerformanceInterceptor performanceInterceptor() {
-        return new PerformanceInterceptor();
-    }
+//    @Profile({"dev", "stg"})// 设置 dev stg 环境开启
+//    @Bean
+//    public PerformanceInterceptor performanceInterceptor() {
+//        return new PerformanceInterceptor();
+//    }
 
     /**
      * 逻辑删除的标志 <br/>
